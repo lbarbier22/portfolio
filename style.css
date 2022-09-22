@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocHorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    /* Pour IE et Firefox */
+    -ms-overlow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.one {
+    background: #2e2f2f;
+}
+
+.two {
+    background: #4c4b3a;
+}
+
+.three {
+    background: #60605f;
+}
+
+.four {
+    background: #a5a5a5;
+}
+
+.titre {
+    font-size: 250%;
+    color: #ffffff;
+    position: fixed;
+    left: 4%;
+    top: 12%;
+}
+
+.contenu {
+    font-size: 200%;
+    color: #ffffff;
+    position: fixed;
+    left: 4%;
+    top: 38%;
+    font-family: 'Georgia', serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    z-index: 1;
+    overflow: auto;
+    background-color: #152c5ea2;
+    position: fixed;
+    top: 80px;
+    left: 25px;
+    width: 150px;
+    height: 556.5px;
+    backdrop-filter: blur(8px);
+}
+
+.navbar li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 16px 16px;
+    font-family: 'Georgia', serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar li a:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.contact {
+    background-color: #7cdfce;
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    background-color: #aad0df;
+    display: block;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.fa:hover {
+    transition-duration: 0.5s;
+    opacity: 0.7;
+    top: 89%;
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+    top: 90%;
+    left: 90%;
+}
+
+.fa-instagram {
+    background: #3B5998;
+    color: white;
+    top: 90%;
+    left: 93%;
+}
+
+.fa-github {
+    background: #3B5998;
+    color: white;
+    top: 90%;
+    left: 87%;
+}
+
+.fa-chevron-right {
+    background: #3B5998;
+    color: white;
+}
